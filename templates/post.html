@@ -6,6 +6,7 @@
 <body>
     <h1>{{ post.title }}</h1>
     <p>{{ post.content }}</p>
-    <a href="{{ url_for('index') }}">Вернуться к списку</a>
+    <a class="btn" href="{{ url_for('index') }}"><button>Вернуться к списку</button></a>
+    <a class="btn" href="{{ url_for('delete_post', post_id=post['id']) }}"><button>Удалить запись</button></a>
 </body>
 </html>
